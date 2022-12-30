@@ -1,154 +1,169 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body{
-    background-color: rgb(237, 237, 237);
-  }
-  .containerAll{
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  header{
-    display: grid;
-    width: 100%;
-    justify-content: center;
-    padding: 0 50px;
-  }
- 
-  main{
-    display: grid;
-    width: 100%;
-    justify-content: center;
-  }
-  .containerMain1{
-    display: grid;
-    background-color:red;
-    justify-content: center;
-    position: relative;
-    bottom: 5px;
-    min-width: 100%;
-    max-height: 280px;
-    border-right: 45px solid white;
-    border-left: 45px solid white;
-  }
-  .imagemMulheres{
-    width: 100px;
-  }
-  .containerMain2{
-    display: grid;
-    display: flex;
-    background-color: white;
-    justify-content: center;
-    gap:15px;
-    position: relative;
-    bottom: 5px;
-    width: 600px;
-    margin: 0 auto;
-    position: relative;
-    bottom: 10px;
-  }
-  .containerMain3{
-    position: relative;
-    bottom: 10px;
-    display: flex;
-    justify-content: center;
-  }
-
-footer {
-    display: grid;
-    width: 100%;
-    height: 8vh;
-    align-items: center;
-    justify-content: center;  
-    margin: 5px 0 ;  
-    color: gray;
-   padding-bottom: 10px;
-    background-color: rgb(237, 237, 237);
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.pMarcarRegistrada{
-    margin-left: 50px;
- }
- footer a {
-  color: gray;
- }
-
- /* Aqui começa o slide */
-
- .sectionSlide{  
-  width: 510px; 
+body{
+  background-color: rgb(237, 237, 237);
 }
-.slider{
- margin: 0 auto;
- width: 100%;
- height: 53vw;
- overflow: hidden;    
-}
-.slides{
- width: 400%;
- height: 400px;
- display: flex;
-}
- .img1{
- min-width: 520px;
- max-width: 520px;
- min-height: 70%;
- max-height: 70%;
-}
- .img2{
- min-width: 520px;
- max-width: 540px;
- min-height: 70%;
- max-height: 70%;
-}
- .img3{
- min-width: 580px;
- max-width: 580px;
- min-height: 70%;
- max-height: 70%;
-}
-
-#radio1:checked ~ .first{
-  margin-left: 0;
-}
-#radio2:checked ~ .first{
-  margin-left: -53%;
-}
-#radio3:checked ~ .first{
-  margin-left: -26%;
-}
-#radio1, #radio2, #radio3{
-  position: absolute;  
-  border: white;
-  z-index: -1;
-}
-.imagemNFR20{
+.containerAll{
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
-  padding-left: 45px;
-  padding-top: 7px;
+}
+header{
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+main{
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.containerMain1{
+  display: grid;
+  justify-content: center;
+  position: relative;
+  bottom: 5px;
+  min-width: 100%;
+  max-height: 280px;
+  border-right: 45px solid white;
+  border-left: 45px solid white;
+}
+.imagemMulheres{
+  width: 100px;
+}
+.containerMain2{
+  display: grid;
+  display: flex;
   background-color: white;
+  justify-content: center;
+  gap:15px;    
+  width: 600px;
+  margin: 0 auto;
   position: relative;
   bottom: 10px;
 }
+.containerMain3{
+  position: relative;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
 
-
-
-
-
-
+footer {
+  display: grid;
+  width: 100%;
+  height: 8vh;
+  align-items: center;
+  justify-content: center;  
+  margin: 5px 0 ;  
+  color: gray;
+ padding-bottom: 10px;
+  background-color: rgb(237, 237, 237);
   
-  
+}
+.pMarcarRegistrada{
+  margin-left: 50px;
+}
+footer a {
+color: gray;
+}
 
+/* Aqui começa o slide */
+
+.sectionSlide{  
+width: 510px; 
+}
+.slider{
+margin: 0 auto;
+width: 100%;
+height: 53vw;
+overflow: hidden;    
+}
+.slides{
+width: 400%;
+height: 400px;
+display: flex;
+}
+.img1{
+min-width: 520px;
+max-width: 520px;
+min-height: 70%;
+max-height: 70%;
+}
+.img2{
+min-width: 520px;
+max-width: 540px;
+min-height: 70%;
+max-height: 70%;
+}
+.img3{
+min-width: 580px;
+max-width: 580px;
+min-height: 70%;
+max-height: 70%;
+}
+
+#radio1:checked ~ .first{
+margin-left: 0;
+}
+#radio2:checked ~ .first{
+margin-left: -53%;
+}
+#radio3:checked ~ .first{
+margin-left: -26%;
+}
+#radio1, #radio2, #radio3{
+position: absolute;  
+border: white;
+z-index: -1;
+}
+.imagemNFR20{
+width: 100%;
+padding-left: 45px;
+padding-top: 7px;
+background-color: white;
+position: relative;
+bottom: 10px;
+}
 
 /* Responsividade */
-/* 
-@media screen and (max-device-width: 1357px){
-    main{
-      display:block;
-      height: 172vh;
-      justify-content: center;
-    }
-} */
+
+@media screen and (max-device-width: 700px){
+.containerMain2{
+    flex-direction: column;  
+    margin-left: 50px; 
+    gap:30px;
+    padding-bottom: 20px;  
+  }
+  .main{
+    padding-left: 150px;
+  }
+  .containerMain3{
+   margin-left: 50px; 
+   width: 600px;
+  }
+  .imagemJogadores{
+    margin: 0 auto;
+    width: 350px;
+  }
+  .imagemJogadores2{
+    width: 100%;
+  }
+  .imagemWhatsApp{
+    margin: 0 auto;
+    width: 350px;
+  }
+  .imagemWhatsApp2{
+    width: 100%;
+  }
+  footer{
+    margin-left: 50px;
+    width: 600px;
+  }
+}
